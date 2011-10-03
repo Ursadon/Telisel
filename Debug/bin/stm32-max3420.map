@@ -1,0 +1,882 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+HSEStartUpStatus    0x1               ..\obj\main.o
+unknownirq          0x1               ..\obj\usb_ch9.o
+sudavirq            0x1               ..\obj\usb_ch9.o
+uresirq             0x1               ..\obj\usb_ch9.o
+suspirq             0x1               ..\obj\usb_ch9.o
+SUD                 0x8               ..\obj\usb_ch9.o
+REGISTER            0x1b              ..\obj\usb_ch9.o
+send3zeros          0x1               ..\obj\usb_ch9.o
+GPIO_InitStructure  0x4               ..\obj\main.o
+SPI_InitStructure   0x12              ..\obj\main.o
+inhibit_send        0x1               ..\obj\usb_ch9.o
+NVIC_InitStructure  0x4               ..\obj\main.o
+EXTI_InitStructure  0x8               ..\obj\main.o
+uresdnirq           0x1               ..\obj\usb_ch9.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ..\obj\startup_stm32f10x_md_vl.o
+ .data          0x00000000        0x0 ..\obj\startup_stm32f10x_md_vl.o
+ .bss           0x00000000        0x0 ..\obj\startup_stm32f10x_md_vl.o
+ .text          0x00000000        0x0 ..\obj\core_cm3.o
+ .data          0x00000000        0x0 ..\obj\core_cm3.o
+ .bss           0x00000000        0x0 ..\obj\core_cm3.o
+ .text.__get_PSP
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__set_PSP
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__get_MSP
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__set_MSP
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__get_BASEPRI
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__set_BASEPRI
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__get_PRIMASK
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__set_PRIMASK
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__get_FAULTMASK
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__set_FAULTMASK
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__get_CONTROL
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__set_CONTROL
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__REV    0x00000000        0x4 ..\obj\core_cm3.o
+ .text.__REV16  0x00000000        0x4 ..\obj\core_cm3.o
+ .text.__REVSH  0x00000000        0x4 ..\obj\core_cm3.o
+ .text.__RBIT   0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__LDREXB
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__LDREXH
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__LDREXW
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__STREXB
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__STREXH
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text.__STREXW
+                0x00000000        0x8 ..\obj\core_cm3.o
+ .text          0x00000000        0x0 ..\obj\system_stm32f10x.o
+ .data          0x00000000       0x14 ..\obj\system_stm32f10x.o
+ .bss           0x00000000        0x0 ..\obj\system_stm32f10x.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0x60 ..\obj\system_stm32f10x.o
+ .text          0x00000000        0x0 ..\obj\stm32f10x_gpio.o
+ .data          0x00000000        0x0 ..\obj\stm32f10x_gpio.o
+ .bss           0x00000000        0x0 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_DeInit
+                0x00000000       0xdc ..\obj\stm32f10x_gpio.o
+ .text.GPIO_AFIODeInit
+                0x00000000       0x18 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_StructInit
+                0x00000000       0x10 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_ReadInputData
+                0x00000000        0x8 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_ReadOutputDataBit
+                0x00000000        0xc ..\obj\stm32f10x_gpio.o
+ .text.GPIO_ReadOutputData
+                0x00000000        0x8 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_WriteBit
+                0x00000000        0xc ..\obj\stm32f10x_gpio.o
+ .text.GPIO_Write
+                0x00000000        0x4 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_PinLockConfig
+                0x00000000       0x10 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_EventOutputConfig
+                0x00000000       0x20 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_EventOutputCmd
+                0x00000000        0xc ..\obj\stm32f10x_gpio.o
+ .text.GPIO_PinRemapConfig
+                0x00000000       0x70 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_EXTILineConfig
+                0x00000000       0x38 ..\obj\stm32f10x_gpio.o
+ .text.GPIO_ETH_MediaInterfaceConfig
+                0x00000000        0xc ..\obj\stm32f10x_gpio.o
+ .text          0x00000000        0x0 ..\obj\main.o
+ .data          0x00000000        0x0 ..\obj\main.o
+ .text.delay_u  0x00000000        0x4 ..\obj\main.o
+ .text.NVIC_Configuration
+                0x00000000       0x34 ..\obj\main.o
+ .text          0x00000000        0x0 ..\obj\stm32f10x_rcc.o
+ .data          0x00000000       0x14 ..\obj\stm32f10x_rcc.o
+ .bss           0x00000000        0x0 ..\obj\stm32f10x_rcc.o
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000       0x14 ..\obj\stm32f10x_rcc.o
+ .text.RCC_HSICmd
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_PREDIV1Config
+                0x00000000       0x1c ..\obj\stm32f10x_rcc.o
+ .text.RCC_ITConfig
+                0x00000000       0x20 ..\obj\stm32f10x_rcc.o
+ .text.RCC_USBCLKConfig
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_ADCCLKConfig
+                0x00000000       0x14 ..\obj\stm32f10x_rcc.o
+ .text.RCC_LSEConfig
+                0x00000000       0x20 ..\obj\stm32f10x_rcc.o
+ .text.RCC_LSICmd
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_RTCCLKConfig
+                0x00000000       0x10 ..\obj\stm32f10x_rcc.o
+ .text.RCC_RTCCLKCmd
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_GetClocksFreq
+                0x00000000       0x9c ..\obj\stm32f10x_rcc.o
+ .text.RCC_AHBPeriphClockCmd
+                0x00000000       0x1c ..\obj\stm32f10x_rcc.o
+ .text.RCC_APB1PeriphClockCmd
+                0x00000000       0x1c ..\obj\stm32f10x_rcc.o
+ .text.RCC_APB2PeriphResetCmd
+                0x00000000       0x1c ..\obj\stm32f10x_rcc.o
+ .text.RCC_APB1PeriphResetCmd
+                0x00000000       0x1c ..\obj\stm32f10x_rcc.o
+ .text.RCC_BackupResetCmd
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_MCOConfig
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text.RCC_ClearFlag
+                0x00000000       0x10 ..\obj\stm32f10x_rcc.o
+ .text.RCC_GetITStatus
+                0x00000000       0x14 ..\obj\stm32f10x_rcc.o
+ .text.RCC_ClearITPendingBit
+                0x00000000        0xc ..\obj\stm32f10x_rcc.o
+ .text          0x00000000        0x0 ..\obj\stm32f10x_exti.o
+ .data          0x00000000        0x0 ..\obj\stm32f10x_exti.o
+ .bss           0x00000000        0x0 ..\obj\stm32f10x_exti.o
+ .text.EXTI_DeInit
+                0x00000000       0x1c ..\obj\stm32f10x_exti.o
+ .text.EXTI_Init
+                0x00000000       0x88 ..\obj\stm32f10x_exti.o
+ .text.EXTI_StructInit
+                0x00000000       0x10 ..\obj\stm32f10x_exti.o
+ .text.EXTI_GenerateSWInterrupt
+                0x00000000       0x10 ..\obj\stm32f10x_exti.o
+ .text.EXTI_GetFlagStatus
+                0x00000000       0x14 ..\obj\stm32f10x_exti.o
+ .text.EXTI_ClearFlag
+                0x00000000        0xc ..\obj\stm32f10x_exti.o
+ .text          0x00000000        0x0 ..\obj\syscalls.o
+ .data          0x00000000        0x0 ..\obj\syscalls.o
+ .bss           0x00000000        0x4 ..\obj\syscalls.o
+ .text._sbrk    0x00000000       0x1c ..\obj\syscalls.o
+ .text.link     0x00000000        0x8 ..\obj\syscalls.o
+ .text._close   0x00000000        0x8 ..\obj\syscalls.o
+ .text._fstat   0x00000000        0xc ..\obj\syscalls.o
+ .text._isatty  0x00000000        0x4 ..\obj\syscalls.o
+ .text._lseek   0x00000000        0x4 ..\obj\syscalls.o
+ .text._read    0x00000000        0x4 ..\obj\syscalls.o
+ .text._write   0x00000000        0x4 ..\obj\syscalls.o
+ .text.abort    0x00000000        0x4 ..\obj\syscalls.o
+ .text          0x00000000        0x0 ..\obj\stm32f10x_flash.o
+ .data          0x00000000        0x0 ..\obj\stm32f10x_flash.o
+ .bss           0x00000000        0x0 ..\obj\stm32f10x_flash.o
+ .text.FLASH_HalfCycleAccessCmd
+                0x00000000       0x18 ..\obj\stm32f10x_flash.o
+ .text.FLASH_Unlock
+                0x00000000       0x18 ..\obj\stm32f10x_flash.o
+ .text.FLASH_UnlockBank1
+                0x00000000       0x18 ..\obj\stm32f10x_flash.o
+ .text.FLASH_Lock
+                0x00000000       0x10 ..\obj\stm32f10x_flash.o
+ .text.FLASH_LockBank1
+                0x00000000       0x10 ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetUserOptionByte
+                0x00000000        0xc ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetWriteProtectionOptionByte
+                0x00000000        0xc ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetReadOutProtectionStatus
+                0x00000000       0x10 ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetPrefetchBufferStatus
+                0x00000000       0x10 ..\obj\stm32f10x_flash.o
+ .text.FLASH_ITConfig
+                0x00000000       0x1c ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetFlagStatus
+                0x00000000       0x20 ..\obj\stm32f10x_flash.o
+ .text.FLASH_ClearFlag
+                0x00000000        0xc ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetStatus
+                0x00000000       0x2c ..\obj\stm32f10x_flash.o
+ .text.FLASH_GetBank1Status
+                0x00000000       0x2c ..\obj\stm32f10x_flash.o
+ .text.FLASH_WaitForLastOperation
+                0x00000000       0x48 ..\obj\stm32f10x_flash.o
+ .text.FLASH_UserOptionByteConfig
+                0x00000000       0x5c ..\obj\stm32f10x_flash.o
+ .text.FLASH_ReadOutProtection
+                0x00000000       0x98 ..\obj\stm32f10x_flash.o
+ .text.FLASH_EnableWriteProtection
+                0x00000000       0xac ..\obj\stm32f10x_flash.o
+ .text.FLASH_ProgramOptionByteData
+                0x00000000       0x4c ..\obj\stm32f10x_flash.o
+ .text.FLASH_ProgramHalfWord
+                0x00000000       0x3c ..\obj\stm32f10x_flash.o
+ .text.FLASH_ProgramWord
+                0x00000000       0x68 ..\obj\stm32f10x_flash.o
+ .text.FLASH_EraseOptionBytes
+                0x00000000       0x94 ..\obj\stm32f10x_flash.o
+ .text.FLASH_EraseAllPages
+                0x00000000       0x3c ..\obj\stm32f10x_flash.o
+ .text.FLASH_ErasePage
+                0x00000000       0x40 ..\obj\stm32f10x_flash.o
+ .text.FLASH_WaitForLastBank1Operation
+                0x00000000       0x48 ..\obj\stm32f10x_flash.o
+ .text.FLASH_EraseAllBank1Pages
+                0x00000000       0x3c ..\obj\stm32f10x_flash.o
+ .text          0x00000000        0x0 ..\obj\usb_ch9.o
+ .text.delay_usss
+                0x00000000       0x28 ..\obj\usb_ch9.o
+ .text.do_IN3   0x00000000        0x4 ..\obj\usb_ch9.o
+ .text.send_keystroke
+                0x00000000       0x18 ..\obj\usb_ch9.o
+ .text          0x00000000        0x0 ..\obj\max3421e_driver.o
+ .data          0x00000000        0x0 ..\obj\max3421e_driver.o
+ .bss           0x00000000        0x0 ..\obj\max3421e_driver.o
+ .text.delay_uss
+                0x00000000       0x28 ..\obj\max3421e_driver.o
+ .text.max3421_wblock
+                0x00000000       0x7c ..\obj\max3421e_driver.o
+ .text          0x00000000        0x0 ..\obj\misc.o
+ .data          0x00000000        0x0 ..\obj\misc.o
+ .bss           0x00000000        0x0 ..\obj\misc.o
+ .text.NVIC_PriorityGroupConfig
+                0x00000000       0x14 ..\obj\misc.o
+ .text.NVIC_Init
+                0x00000000       0x6c ..\obj\misc.o
+ .text.NVIC_SetVectorTable
+                0x00000000       0x18 ..\obj\misc.o
+ .text.NVIC_SystemLPConfig
+                0x00000000       0x1c ..\obj\misc.o
+ .text.SysTick_CLKSourceConfig
+                0x00000000       0x18 ..\obj\misc.o
+ .text          0x00000000        0x0 ..\obj\stm32f10x_spi.o
+ .data          0x00000000        0x0 ..\obj\stm32f10x_spi.o
+ .bss           0x00000000        0x0 ..\obj\stm32f10x_spi.o
+ .text.SPI_I2S_DeInit
+                0x00000000       0x6c ..\obj\stm32f10x_spi.o
+ .text.I2S_Init
+                0x00000000       0xe0 ..\obj\stm32f10x_spi.o
+ .text.SPI_StructInit
+                0x00000000       0x18 ..\obj\stm32f10x_spi.o
+ .text.I2S_StructInit
+                0x00000000       0x14 ..\obj\stm32f10x_spi.o
+ .text.I2S_Cmd  0x00000000       0x20 ..\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ITConfig
+                0x00000000       0x2c ..\obj\stm32f10x_spi.o
+ .text.SPI_I2S_DMACmd
+                0x00000000       0x1c ..\obj\stm32f10x_spi.o
+ .text.SPI_NSSInternalSoftwareConfig
+                0x00000000       0x28 ..\obj\stm32f10x_spi.o
+ .text.SPI_SSOutputCmd
+                0x00000000       0x20 ..\obj\stm32f10x_spi.o
+ .text.SPI_DataSizeConfig
+                0x00000000       0x20 ..\obj\stm32f10x_spi.o
+ .text.SPI_TransmitCRC
+                0x00000000        0xc ..\obj\stm32f10x_spi.o
+ .text.SPI_CalculateCRC
+                0x00000000       0x20 ..\obj\stm32f10x_spi.o
+ .text.SPI_GetCRC
+                0x00000000       0x10 ..\obj\stm32f10x_spi.o
+ .text.SPI_GetCRCPolynomial
+                0x00000000        0x8 ..\obj\stm32f10x_spi.o
+ .text.SPI_BiDirectionalLineConfig
+                0x00000000       0x24 ..\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ClearFlag
+                0x00000000        0x8 ..\obj\stm32f10x_spi.o
+ .text.SPI_I2S_GetITStatus
+                0x00000000       0x2c ..\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ClearITPendingBit
+                0x00000000       0x10 ..\obj\stm32f10x_spi.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x00020000         xr
+ram              0x20000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20002000                _eram = 0x20002000
+
+.text           0x08000000      0xfbc
+ *(.isr_vector .isr_vector.*)
+ .isr_vector    0x08000000      0x124 ..\obj\startup_stm32f10x_md_vl.o
+                0x08000000                g_pfnVectors
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.Default_Reset_Handler
+                0x08000124       0x80 ..\obj\startup_stm32f10x_md_vl.o
+                0x08000124                Default_Reset_Handler
+                0x08000124                Reset_Handler
+ .text.Default_Handler
+                0x080001a4        0x4 ..\obj\startup_stm32f10x_md_vl.o
+                0x080001a4                EXTI2_IRQHandler
+                0x080001a4                DebugMon_Handler
+                0x080001a4                TIM1_CC_IRQHandler
+                0x080001a4                HardFault_Handler
+                0x080001a4                SysTick_Handler
+                0x080001a4                PVD_IRQHandler
+                0x080001a4                PendSV_Handler
+                0x080001a4                NMI_Handler
+                0x080001a4                EXTI0_IRQHandler
+                0x080001a4                I2C2_EV_IRQHandler
+                0x080001a4                TIM1_UP_TIM16_IRQHandler
+                0x080001a4                UsageFault_Handler
+                0x080001a4                SPI1_IRQHandler
+                0x080001a4                TAMPER_IRQHandler
+                0x080001a4                TIM6_DAC_IRQHandler
+                0x080001a4                DMA1_Channel4_IRQHandler
+                0x080001a4                ADC1_IRQHandler
+                0x080001a4                USART3_IRQHandler
+                0x080001a4                RTC_IRQHandler
+                0x080001a4                DMA1_Channel7_IRQHandler
+                0x080001a4                TIM4_IRQHandler
+                0x080001a4                I2C1_EV_IRQHandler
+                0x080001a4                DMA1_Channel6_IRQHandler
+                0x080001a4                TIM3_IRQHandler
+                0x080001a4                RCC_IRQHandler
+                0x080001a4                DMA1_Channel1_IRQHandler
+                0x080001a4                CEC_IRQHandler
+                0x080001a4                EXTI15_10_IRQHandler
+                0x080001a4                TIM7_IRQHandler
+                0x080001a4                EXTI9_5_IRQHandler
+                0x080001a4                SPI2_IRQHandler
+                0x080001a4                MemManage_Handler
+                0x080001a4                SVC_Handler
+                0x080001a4                DMA1_Channel5_IRQHandler
+                0x080001a4                EXTI4_IRQHandler
+                0x080001a4                TIM1_TRG_COM_TIM17_IRQHandler
+                0x080001a4                DMA1_Channel3_IRQHandler
+                0x080001a4                WWDG_IRQHandler
+                0x080001a4                TIM2_IRQHandler
+                0x080001a4                EXTI1_IRQHandler
+                0x080001a4                RTCAlarm_IRQHandler
+                0x080001a4                USART2_IRQHandler
+                0x080001a4                I2C2_ER_IRQHandler
+                0x080001a4                DMA1_Channel2_IRQHandler
+                0x080001a4                FLASH_IRQHandler
+                0x080001a4                BusFault_Handler
+                0x080001a4                USART1_IRQHandler
+                0x080001a4                I2C1_ER_IRQHandler
+                0x080001a4                TIM1_BRK_TIM15_IRQHandler
+ .text.SystemInit
+                0x080001a8       0xf0 ..\obj\system_stm32f10x.o
+                0x080001a8                SystemInit
+ .text.GPIO_Init
+                0x08000298      0x248 ..\obj\stm32f10x_gpio.o
+                0x08000298                GPIO_Init
+ .text.GPIO_ReadInputDataBit
+                0x080004e0        0xc ..\obj\stm32f10x_gpio.o
+                0x080004e0                GPIO_ReadInputDataBit
+ .text.GPIO_SetBits
+                0x080004ec        0x4 ..\obj\stm32f10x_gpio.o
+                0x080004ec                GPIO_SetBits
+ .text.GPIO_ResetBits
+                0x080004f0        0x4 ..\obj\stm32f10x_gpio.o
+                0x080004f0                GPIO_ResetBits
+ .text.SetSysClockTo24
+                0x080004f4       0x6c ..\obj\main.o
+                0x080004f4                SetSysClockTo24
+ .text.main     0x08000560      0x12c ..\obj\main.o
+                0x08000560                main
+ .text.EXTI3_IRQHandler
+                0x0800068c       0x24 ..\obj\main.o
+                0x0800068c                EXTI3_IRQHandler
+ .text.RCC_DeInit
+                0x080006b0       0x44 ..\obj\stm32f10x_rcc.o
+                0x080006b0                RCC_DeInit
+ .text.RCC_HSEConfig
+                0x080006f4       0x38 ..\obj\stm32f10x_rcc.o
+                0x080006f4                RCC_HSEConfig
+ .text.RCC_PLLConfig
+                0x0800072c       0x18 ..\obj\stm32f10x_rcc.o
+                0x0800072c                RCC_PLLConfig
+ .text.RCC_PLLCmd
+                0x08000744        0xc ..\obj\stm32f10x_rcc.o
+                0x08000744                RCC_PLLCmd
+ .text.RCC_SYSCLKConfig
+                0x08000750       0x14 ..\obj\stm32f10x_rcc.o
+                0x08000750                RCC_SYSCLKConfig
+ .text.RCC_GetSYSCLKSource
+                0x08000764       0x10 ..\obj\stm32f10x_rcc.o
+                0x08000764                RCC_GetSYSCLKSource
+ .text.RCC_HCLKConfig
+                0x08000774       0x14 ..\obj\stm32f10x_rcc.o
+                0x08000774                RCC_HCLKConfig
+ .text.RCC_PCLK1Config
+                0x08000788       0x14 ..\obj\stm32f10x_rcc.o
+                0x08000788                RCC_PCLK1Config
+ .text.RCC_PCLK2Config
+                0x0800079c       0x14 ..\obj\stm32f10x_rcc.o
+                0x0800079c                RCC_PCLK2Config
+ .text.RCC_APB2PeriphClockCmd
+                0x080007b0       0x1c ..\obj\stm32f10x_rcc.o
+                0x080007b0                RCC_APB2PeriphClockCmd
+ .text.RCC_GetFlagStatus
+                0x080007cc       0x34 ..\obj\stm32f10x_rcc.o
+                0x080007cc                RCC_GetFlagStatus
+ .text.RCC_WaitForHSEStartUp
+                0x08000800       0x30 ..\obj\stm32f10x_rcc.o
+                0x08000800                RCC_WaitForHSEStartUp
+ .text.EXTI_GetITStatus
+                0x08000830       0x1c ..\obj\stm32f10x_exti.o
+                0x08000830                EXTI_GetITStatus
+ .text.EXTI_ClearITPendingBit
+                0x0800084c        0xc ..\obj\stm32f10x_exti.o
+                0x0800084c                EXTI_ClearITPendingBit
+ .text.FLASH_SetLatency
+                0x08000858       0x14 ..\obj\stm32f10x_flash.o
+                0x08000858                FLASH_SetLatency
+ .text.FLASH_PrefetchBufferCmd
+                0x0800086c       0x18 ..\obj\stm32f10x_flash.o
+                0x0800086c                FLASH_PrefetchBufferCmd
+ .text.send_descriptor
+                0x08000884       0xf4 ..\obj\usb_ch9.o
+                0x08000884                send_descriptor
+ .text.class_request
+                0x08000978        0x8 ..\obj\usb_ch9.o
+                0x08000978                class_request
+ .text.vendor_request
+                0x08000980        0x8 ..\obj\usb_ch9.o
+                0x08000980                vendor_request
+ .text.check_for_resume
+                0x08000988       0x7c ..\obj\usb_ch9.o
+                0x08000988                check_for_resume
+ .text.feature  0x08000a04       0x7c ..\obj\usb_ch9.o
+                0x08000a04                feature
+ .text.get_status
+                0x08000a80       0x68 ..\obj\usb_ch9.o
+                0x08000a80                get_status
+ .text.set_configuration
+                0x08000ae8       0x30 ..\obj\usb_ch9.o
+                0x08000ae8                set_configuration
+ .text.get_configuration
+                0x08000b18       0x1c ..\obj\usb_ch9.o
+                0x08000b18                get_configuration
+ .text.set_interface
+                0x08000b34       0x1c ..\obj\usb_ch9.o
+                0x08000b34                set_interface
+ .text.get_interface
+                0x08000b50       0x2c ..\obj\usb_ch9.o
+                0x08000b50                get_interface
+ .text.std_request
+                0x08000b7c       0x50 ..\obj\usb_ch9.o
+                0x08000b7c                std_request
+ .text.do_SETUP
+                0x08000bcc       0x48 ..\obj\usb_ch9.o
+                0x08000bcc                do_SETUP
+ .text.service_irqs
+                0x08000c14       0xc4 ..\obj\usb_ch9.o
+                0x08000c14                service_irqs
+ .text.max3421_wreg
+                0x08000cd8       0x70 ..\obj\max3421e_driver.o
+                0x08000cd8                max3421_wreg
+ .text.max3421_wreg_as
+                0x08000d48       0x70 ..\obj\max3421e_driver.o
+                0x08000d48                max3421_wreg_as
+ .text.max3421_rreg
+                0x08000db8       0x48 ..\obj\max3421e_driver.o
+                0x08000db8                max3421_rreg
+ .text.max3421_rreg_as
+                0x08000e00       0x48 ..\obj\max3421e_driver.o
+                0x08000e00                max3421_rreg_as
+ .text.max3421_rblock
+                0x08000e48       0x84 ..\obj\max3421e_driver.o
+                0x08000e48                max3421_rblock
+ .text.max3421_reset
+                0x08000ecc       0x20 ..\obj\max3421e_driver.o
+                0x08000ecc                max3421_reset
+ .text.max3421_init
+                0x08000eec       0x48 ..\obj\max3421e_driver.o
+                0x08000eec                max3421_init
+ .text.SPI_Init
+                0x08000f34       0x50 ..\obj\stm32f10x_spi.o
+                0x08000f34                SPI_Init
+ .text.SPI_Cmd  0x08000f84       0x20 ..\obj\stm32f10x_spi.o
+                0x08000f84                SPI_Cmd
+ .text.SPI_I2S_SendData
+                0x08000fa4        0x4 ..\obj\stm32f10x_spi.o
+                0x08000fa4                SPI_I2S_SendData
+ .text.SPI_I2S_ReceiveData
+                0x08000fa8        0x8 ..\obj\stm32f10x_spi.o
+                0x08000fa8                SPI_I2S_ReceiveData
+ .text.SPI_I2S_GetFlagStatus
+                0x08000fb0        0xc ..\obj\stm32f10x_spi.o
+                0x08000fb0                SPI_I2S_GetFlagStatus
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.rodata .rodata* .gnu.linkonce.r.*)
+
+.vfp11_veneer   0x08000fbc        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000fbc        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x08000fbc                . = ALIGN (0x4)
+                0x08000fbc                _etext = .
+                0x08000fbc                _sidata = .
+
+.data           0x20000000      0x1b0 load address 0x08000fbc
+                0x20000000                _sdata = .
+ *(.data .data.*)
+ .data          0x20000000      0x1b0 ..\obj\usb_ch9.o
+                0x20000000                DD
+                0x20000014                CD
+                0x20000038                RepD
+                0x20000064                strDesc
+                0x20000164                Message
+                0x200001ac                msglen
+                0x200001b0                . = ALIGN (0x4)
+                0x200001b0                _edata = .
+
+.bss            0x200001b0       0x60 load address 0x0800116c
+                0x200001b0                _sbss = .
+ *(.bss .bss.*)
+ .bss           0x200001b0        0x4 ..\obj\main.o
+                0x200001b0                int_count
+ .bss           0x200001b4        0x7 ..\obj\usb_ch9.o
+                0x200001b4                Suspended
+                0x200001b5                RWU_enabled
+                0x200001b6                ep3stall
+                0x200001b7                configval
+                0x200001ba                msgidx
+ *(COMMON)
+ *fill*         0x200001bb        0x1 00
+ COMMON         0x200001bc       0x28 ..\obj\main.o
+                0x200001bc                HSEStartUpStatus
+                0x200001c0                GPIO_InitStructure
+                0x200001c4                SPI_InitStructure
+                0x200001d8                NVIC_InitStructure
+                0x200001dc                EXTI_InitStructure
+ COMMON         0x200001e4       0x2a ..\obj\usb_ch9.o
+                0x200001e4                unknownirq
+                0x200001e5                sudavirq
+                0x200001e6                uresirq
+                0x200001e7                suspirq
+                0x200001e8                SUD
+                0x200001f0                REGISTER
+                0x2000020b                send3zeros
+                0x2000020c                inhibit_send
+                0x2000020d                uresdnirq
+                0x20000210                . = ALIGN (0x4)
+ *fill*         0x2000020e        0x2 00
+                0x20000210                _ebss = .
+
+.co_stack       0x20000210      0x400 load address 0x080011cc
+                0x20000210                . = ALIGN (0x8)
+ *(.co_stack .co_stack.*)
+ .co_stack      0x20000210      0x400 ..\obj\startup_stm32f10x_md_vl.o
+                0x20000210                pulStack
+                0x20000610                . = ALIGN (0x4)
+                0x20000610                _end = .
+LOAD ..\obj\startup_stm32f10x_md_vl.o
+LOAD ..\obj\core_cm3.o
+LOAD ..\obj\system_stm32f10x.o
+LOAD ..\obj\stm32f10x_gpio.o
+LOAD ..\obj\main.o
+LOAD ..\obj\stm32f10x_rcc.o
+LOAD ..\obj\stm32f10x_exti.o
+LOAD ..\obj\syscalls.o
+LOAD ..\obj\stm32f10x_flash.o
+LOAD ..\obj\usb_ch9.o
+LOAD ..\obj\max3421e_driver.o
+LOAD ..\obj\misc.o
+LOAD ..\obj\stm32f10x_spi.o
+START GROUP
+LOAD c:/coocox/coide/gcc/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2\libgcc.a
+LOAD c:/coocox/coide/gcc/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+OUTPUT(stm32-max3420.elf elf32-littlearm)
+
+.debug_abbrev   0x00000000     0x12aa
+ .debug_abbrev  0x00000000       0xb2 ..\obj\startup_stm32f10x_md_vl.o
+ .debug_abbrev  0x000000b2       0xc3 ..\obj\core_cm3.o
+ .debug_abbrev  0x00000175      0x1b5 ..\obj\system_stm32f10x.o
+ .debug_abbrev  0x0000032a      0x1db ..\obj\stm32f10x_gpio.o
+ .debug_abbrev  0x00000505      0x165 ..\obj\main.o
+ .debug_abbrev  0x0000066a      0x1d2 ..\obj\stm32f10x_rcc.o
+ .debug_abbrev  0x0000083c      0x172 ..\obj\stm32f10x_exti.o
+ .debug_abbrev  0x000009ae       0xfc ..\obj\syscalls.o
+ .debug_abbrev  0x00000aaa      0x1e5 ..\obj\stm32f10x_flash.o
+ .debug_abbrev  0x00000c8f      0x1b6 ..\obj\usb_ch9.o
+ .debug_abbrev  0x00000e45      0x156 ..\obj\max3421e_driver.o
+ .debug_abbrev  0x00000f9b      0x15d ..\obj\misc.o
+ .debug_abbrev  0x000010f8      0x1b2 ..\obj\stm32f10x_spi.o
+
+.debug_info     0x00000000     0x4b44
+ .debug_info    0x00000000      0x132 ..\obj\startup_stm32f10x_md_vl.o
+ .debug_info    0x00000132      0x547 ..\obj\core_cm3.o
+ .debug_info    0x00000679      0x455 ..\obj\system_stm32f10x.o
+ .debug_info    0x00000ace      0x725 ..\obj\stm32f10x_gpio.o
+ .debug_info    0x000011f3      0x759 ..\obj\main.o
+ .debug_info    0x0000194c      0x96e ..\obj\stm32f10x_rcc.o
+ .debug_info    0x000022ba      0x361 ..\obj\stm32f10x_exti.o
+ .debug_info    0x0000261b      0x438 ..\obj\syscalls.o
+ .debug_info    0x00002a53      0x853 ..\obj\stm32f10x_flash.o
+ .debug_info    0x000032a6      0x56d ..\obj\usb_ch9.o
+ .debug_info    0x00003813      0x477 ..\obj\max3421e_driver.o
+ .debug_info    0x00003c8a      0x54c ..\obj\misc.o
+ .debug_info    0x000041d6      0x96e ..\obj\stm32f10x_spi.o
+
+.debug_line     0x00000000     0x2f45
+ .debug_line    0x00000000       0x9b ..\obj\startup_stm32f10x_md_vl.o
+ .debug_line    0x0000009b      0x2d6 ..\obj\core_cm3.o
+ .debug_line    0x00000371      0x269 ..\obj\system_stm32f10x.o
+ .debug_line    0x000005da      0x4bf ..\obj\stm32f10x_gpio.o
+ .debug_line    0x00000a99      0x37e ..\obj\main.o
+ .debug_line    0x00000e17      0x520 ..\obj\stm32f10x_rcc.o
+ .debug_line    0x00001337      0x2f1 ..\obj\stm32f10x_exti.o
+ .debug_line    0x00001628      0x3a1 ..\obj\syscalls.o
+ .debug_line    0x000019c9      0x5b2 ..\obj\stm32f10x_flash.o
+ .debug_line    0x00001f7b      0x4bb ..\obj\usb_ch9.o
+ .debug_line    0x00002436      0x3d4 ..\obj\max3421e_driver.o
+ .debug_line    0x0000280a      0x28f ..\obj\misc.o
+ .debug_line    0x00002a99      0x4ac ..\obj\stm32f10x_spi.o
+
+.debug_macinfo  0x00000000   0x237674
+ .debug_macinfo
+                0x00000000     0x223b ..\obj\startup_stm32f10x_md_vl.o
+ .debug_macinfo
+                0x0000223b     0x2afb ..\obj\core_cm3.o
+ .debug_macinfo
+                0x00004d36    0x34c2f ..\obj\system_stm32f10x.o
+ .debug_macinfo
+                0x00039965    0x391c6 ..\obj\stm32f10x_gpio.o
+ .debug_macinfo
+                0x00072b2b    0x3d7d3 ..\obj\main.o
+ .debug_macinfo
+                0x000b02fe    0x37966 ..\obj\stm32f10x_rcc.o
+ .debug_macinfo
+                0x000e7c64    0x3524c ..\obj\stm32f10x_exti.o
+ .debug_macinfo
+                0x0011ceb0     0x54c3 ..\obj\syscalls.o
+ .debug_macinfo
+                0x00122373    0x3673d ..\obj\stm32f10x_flash.o
+ .debug_macinfo
+                0x00158ab0    0x37f0a ..\obj\usb_ch9.o
+ .debug_macinfo
+                0x001909ba    0x38f6a ..\obj\max3421e_driver.o
+ .debug_macinfo
+                0x001c9924    0x350fc ..\obj\misc.o
+ .debug_macinfo
+                0x001fea20    0x38c54 ..\obj\stm32f10x_spi.o
+
+.debug_loc      0x00000000     0x2dee
+ .debug_loc     0x00000000       0x33 ..\obj\startup_stm32f10x_md_vl.o
+ .debug_loc     0x00000033      0x270 ..\obj\core_cm3.o
+ .debug_loc     0x000002a3      0x10e ..\obj\system_stm32f10x.o
+ .debug_loc     0x000003b1      0xc7e ..\obj\stm32f10x_gpio.o
+ .debug_loc     0x0000102f       0x88 ..\obj\main.o
+ .debug_loc     0x000010b7      0x64a ..\obj\stm32f10x_rcc.o
+ .debug_loc     0x00001701      0x164 ..\obj\stm32f10x_exti.o
+ .debug_loc     0x00001865       0x98 ..\obj\syscalls.o
+ .debug_loc     0x000018fd      0x876 ..\obj\stm32f10x_flash.o
+ .debug_loc     0x00002173      0x36a ..\obj\usb_ch9.o
+ .debug_loc     0x000024dd      0x244 ..\obj\max3421e_driver.o
+ .debug_loc     0x00002721      0x160 ..\obj\misc.o
+ .debug_loc     0x00002881      0x56d ..\obj\stm32f10x_spi.o
+
+.debug_pubnames
+                0x00000000     0x10cb
+ .debug_pubnames
+                0x00000000       0x4a ..\obj\startup_stm32f10x_md_vl.o
+ .debug_pubnames
+                0x0000004a      0x159 ..\obj\core_cm3.o
+ .debug_pubnames
+                0x000001a3       0x61 ..\obj\system_stm32f10x.o
+ .debug_pubnames
+                0x00000204      0x19d ..\obj\stm32f10x_gpio.o
+ .debug_pubnames
+                0x000003a1       0xe5 ..\obj\main.o
+ .debug_pubnames
+                0x00000486      0x2da ..\obj\stm32f10x_rcc.o
+ .debug_pubnames
+                0x00000760       0xbb ..\obj\stm32f10x_exti.o
+ .debug_pubnames
+                0x0000081b       0x71 ..\obj\syscalls.o
+ .debug_pubnames
+                0x0000088c      0x2f2 ..\obj\stm32f10x_flash.o
+ .debug_pubnames
+                0x00000b7e      0x21b ..\obj\usb_ch9.o
+ .debug_pubnames
+                0x00000d99       0xb3 ..\obj\max3421e_driver.o
+ .debug_pubnames
+                0x00000e4c       0x89 ..\obj\misc.o
+ .debug_pubnames
+                0x00000ed5      0x1f6 ..\obj\stm32f10x_spi.o
+
+.debug_aranges  0x00000000      0x6d8
+ .debug_aranges
+                0x00000000       0x28 ..\obj\startup_stm32f10x_md_vl.o
+ .debug_aranges
+                0x00000028       0xc8 ..\obj\core_cm3.o
+ .debug_aranges
+                0x000000f0       0x28 ..\obj\system_stm32f10x.o
+ .debug_aranges
+                0x00000118       0xa8 ..\obj\stm32f10x_gpio.o
+ .debug_aranges
+                0x000001c0       0x40 ..\obj\main.o
+ .debug_aranges
+                0x00000200      0x120 ..\obj\stm32f10x_rcc.o
+ .debug_aranges
+                0x00000320       0x58 ..\obj\stm32f10x_exti.o
+ .debug_aranges
+                0x00000378       0x60 ..\obj\syscalls.o
+ .debug_aranges
+                0x000003d8       0xf8 ..\obj\stm32f10x_flash.o
+ .debug_aranges
+                0x000004d0       0x98 ..\obj\usb_ch9.o
+ .debug_aranges
+                0x00000568       0x60 ..\obj\max3421e_driver.o
+ .debug_aranges
+                0x000005c8       0x40 ..\obj\misc.o
+ .debug_aranges
+                0x00000608       0xd0 ..\obj\stm32f10x_spi.o
+
+.debug_ranges   0x00000000      0x698
+ .debug_ranges  0x00000000       0x18 ..\obj\startup_stm32f10x_md_vl.o
+ .debug_ranges  0x00000018       0xb8 ..\obj\core_cm3.o
+ .debug_ranges  0x000000d0       0x78 ..\obj\system_stm32f10x.o
+ .debug_ranges  0x00000148       0x98 ..\obj\stm32f10x_gpio.o
+ .debug_ranges  0x000001e0       0x30 ..\obj\main.o
+ .debug_ranges  0x00000210      0x110 ..\obj\stm32f10x_rcc.o
+ .debug_ranges  0x00000320       0x48 ..\obj\stm32f10x_exti.o
+ .debug_ranges  0x00000368       0x50 ..\obj\syscalls.o
+ .debug_ranges  0x000003b8      0x118 ..\obj\stm32f10x_flash.o
+ .debug_ranges  0x000004d0       0x88 ..\obj\usb_ch9.o
+ .debug_ranges  0x00000558       0x50 ..\obj\max3421e_driver.o
+ .debug_ranges  0x000005a8       0x30 ..\obj\misc.o
+ .debug_ranges  0x000005d8       0xc0 ..\obj\stm32f10x_spi.o
+
+.debug_str      0x00000000     0x1ece
+ .debug_str     0x00000000       0xbb ..\obj\startup_stm32f10x_md_vl.o
+                                 0xda (size before relaxing)
+ .debug_str     0x000000bb      0x1d5 ..\obj\core_cm3.o
+                                0x225 (size before relaxing)
+ .debug_str     0x00000290      0x16a ..\obj\system_stm32f10x.o
+                                0x22d (size before relaxing)
+ .debug_str     0x000003fa      0x3b1 ..\obj\stm32f10x_gpio.o
+                                0x472 (size before relaxing)
+ .debug_str     0x000007ab      0x5c4 ..\obj\main.o
+                                0x7dc (size before relaxing)
+ .debug_str     0x00000d6f      0x3ff ..\obj\stm32f10x_rcc.o
+                                0x5c6 (size before relaxing)
+ .debug_str     0x0000116e      0x101 ..\obj\stm32f10x_exti.o
+                                0x2b7 (size before relaxing)
+ .debug_str     0x0000126f      0x187 ..\obj\syscalls.o
+                                0x243 (size before relaxing)
+ .debug_str     0x000013f6      0x427 ..\obj\stm32f10x_flash.o
+                                0x541 (size before relaxing)
+ .debug_str     0x0000181d      0x1d4 ..\obj\usb_ch9.o
+                                0x280 (size before relaxing)
+ .debug_str     0x000019f1       0xc7 ..\obj\max3421e_driver.o
+                                0x226 (size before relaxing)
+ .debug_str     0x00001ab8      0x155 ..\obj\misc.o
+                                0x31c (size before relaxing)
+ .debug_str     0x00001c0d      0x2c1 ..\obj\stm32f10x_spi.o
+                                0x556 (size before relaxing)
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a ..\obj\startup_stm32f10x_md_vl.o
+                                 0x2b (size before relaxing)
+ .comment       0x00000000       0x2b ..\obj\core_cm3.o
+ .comment       0x00000000       0x2b ..\obj\system_stm32f10x.o
+ .comment       0x00000000       0x2b ..\obj\stm32f10x_gpio.o
+ .comment       0x00000000       0x2b ..\obj\main.o
+ .comment       0x00000000       0x2b ..\obj\stm32f10x_rcc.o
+ .comment       0x00000000       0x2b ..\obj\stm32f10x_exti.o
+ .comment       0x00000000       0x2b ..\obj\syscalls.o
+ .comment       0x00000000       0x2b ..\obj\stm32f10x_flash.o
+ .comment       0x00000000       0x2b ..\obj\usb_ch9.o
+ .comment       0x00000000       0x2b ..\obj\max3421e_driver.o
+ .comment       0x00000000       0x2b ..\obj\misc.o
+ .comment       0x00000000       0x2b ..\obj\stm32f10x_spi.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 ..\obj\startup_stm32f10x_md_vl.o
+ .ARM.attributes
+                0x00000031       0x31 ..\obj\core_cm3.o
+ .ARM.attributes
+                0x00000062       0x31 ..\obj\system_stm32f10x.o
+ .ARM.attributes
+                0x00000093       0x31 ..\obj\stm32f10x_gpio.o
+ .ARM.attributes
+                0x000000c4       0x31 ..\obj\main.o
+ .ARM.attributes
+                0x000000f5       0x31 ..\obj\stm32f10x_rcc.o
+ .ARM.attributes
+                0x00000126       0x31 ..\obj\stm32f10x_exti.o
+ .ARM.attributes
+                0x00000157       0x31 ..\obj\syscalls.o
+ .ARM.attributes
+                0x00000188       0x31 ..\obj\stm32f10x_flash.o
+ .ARM.attributes
+                0x000001b9       0x31 ..\obj\usb_ch9.o
+ .ARM.attributes
+                0x000001ea       0x31 ..\obj\max3421e_driver.o
+ .ARM.attributes
+                0x0000021b       0x31 ..\obj\misc.o
+ .ARM.attributes
+                0x0000024c       0x31 ..\obj\stm32f10x_spi.o
+
+.debug_frame    0x00000000      0xe00
+ .debug_frame   0x00000000       0x3c ..\obj\startup_stm32f10x_md_vl.o
+ .debug_frame   0x0000003c      0x170 ..\obj\core_cm3.o
+ .debug_frame   0x000001ac       0x34 ..\obj\system_stm32f10x.o
+ .debug_frame   0x000001e0      0x160 ..\obj\stm32f10x_gpio.o
+ .debug_frame   0x00000340       0x88 ..\obj\main.o
+ .debug_frame   0x000003c8      0x234 ..\obj\stm32f10x_rcc.o
+ .debug_frame   0x000005fc       0x98 ..\obj\stm32f10x_exti.o
+ .debug_frame   0x00000694       0xa0 ..\obj\syscalls.o
+ .debug_frame   0x00000734      0x258 ..\obj\stm32f10x_flash.o
+ .debug_frame   0x0000098c      0x16c ..\obj\usb_ch9.o
+ .debug_frame   0x00000af8       0xf0 ..\obj\max3421e_driver.o
+ .debug_frame   0x00000be8       0x68 ..\obj\misc.o
+ .debug_frame   0x00000c50      0x1b0 ..\obj\stm32f10x_spi.o
+
+.debug_pubtypes
+                0x00000000      0x6a5
+ .debug_pubtypes
+                0x00000000       0x50 ..\obj\core_cm3.o
+ .debug_pubtypes
+                0x00000050       0x55 ..\obj\system_stm32f10x.o
+ .debug_pubtypes
+                0x000000a5       0xc3 ..\obj\stm32f10x_gpio.o
+ .debug_pubtypes
+                0x00000168      0x131 ..\obj\main.o
+ .debug_pubtypes
+                0x00000299       0x9e ..\obj\stm32f10x_rcc.o
+ .debug_pubtypes
+                0x00000337       0xa2 ..\obj\stm32f10x_exti.o
+ .debug_pubtypes
+                0x000003d9       0xaa ..\obj\syscalls.o
+ .debug_pubtypes
+                0x00000483       0x8d ..\obj\stm32f10x_flash.o
+ .debug_pubtypes
+                0x00000510       0x12 ..\obj\usb_ch9.o
+ .debug_pubtypes
+                0x00000522       0x4d ..\obj\max3421e_driver.o
+ .debug_pubtypes
+                0x0000056f       0x80 ..\obj\misc.o
+ .debug_pubtypes
+                0x000005ef       0xb6 ..\obj\stm32f10x_spi.o

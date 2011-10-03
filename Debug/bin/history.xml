@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.5.2 -O2 -nostartfiles -Map=stm32-max3420.map -mcpu=cortex-m3 -mthumb -LD:\workspace\STM32\stm32-max3420 --gc-sections -TD:\workspace\STM32\stm32-max3420\link.ld -g">
+      <target file="stm32-max3420.elf" lastModified="132bf745344">
+         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="132880bc8ca"/>
+         <source file="..\obj\core_cm3.o" lastModified="132880bc9b4"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="132880bcb0c"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="132880bcd6d"/>
+         <source file="..\obj\main.o" lastModified="132ab8f1729"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="132880bd1a3"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="132880bd2fb"/>
+         <source file="..\obj\syscalls.o" lastModified="132880bd3e5"/>
+         <source file="..\obj\stm32f10x_flash.o" lastModified="13294bbb9a0"/>
+         <source file="..\obj\usb_ch9.o" lastModified="132bf7450ee"/>
+         <source file="..\obj\max3421e_driver.o" lastModified="132959b57b8"/>
+         <source file="..\obj\misc.o" lastModified="132880bda4e"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="132880bdccf"/>
+      </target>
+   </processor>
+</history>
