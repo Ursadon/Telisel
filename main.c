@@ -1,10 +1,11 @@
 #include "stm32f10x.h"
-#include "stm32f10x_spi.h"
+//#include "stm32f10x_spi.h"
 #include "stm32f10x_rcc.h"
 #include "stm32f10x_flash.h"
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_exti.h"
 #include "max3421e_driver.h"
+#include <stm_spi_master.h>
 #include "misc.h"
 #include "usb_ch9.h"
 
@@ -14,7 +15,7 @@
 #define BLUE_ON  GPIO_SetBits(GPIOC,GPIO_Pin_8)
 #define BLUE_OFF GPIO_ResetBits(GPIOC,GPIO_Pin_8)
 
-SPI_InitTypeDef SPI_InitStructure;
+//SPI_InitTypeDef SPI_InitStructure;
 GPIO_InitTypeDef GPIO_InitStructure;
 ErrorStatus HSEStartUpStatus;
 EXTI_InitTypeDef EXTI_InitStructure;
@@ -143,19 +144,24 @@ int main(void) {
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 	/* SPI1 Configuration ----------------------------------------------------*/
-	SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
-	SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
-	SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
-	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
-	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
-	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
-	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
-	SPI_InitStructure.SPI_CRCPolynomial = 7;
-	SPI_Init(SPI1, &SPI_InitStructure);
+	//	SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+	//	SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
+	//	SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+	//	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+	//	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
+	//	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+	//	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+	//	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
+	//	SPI_InitStructure.SPI_CRCPolynomial = 7;
+	//	SPI_Init(SPI1, &SPI_InitStructure);
+	pi_spi1.Init(COX_SPI_MODE0, 8);
+	pi_spi1.Cfg(COX_SPI_CFG_MODE, COX_SPI_MODE0, 0);
+	pi_spi1.Cfg(COX_SPI_CFG_RATE, SPI_BaudRatePrescaler_4, 0);
+	pi_spi1.Cfg(COX_SPI_CFG_BITS, 8, 0);
+	pi_spi1.Cfg(COX_SPI_CFG_FSB, COX_MSPI_FSB_MSB, 0);
 
 	/* Enable SPI1 */
-	SPI_Cmd(SPI1, ENABLE);
+	//	SPI_Cmd(SPI1, ENABLE);
 
 	max3421_init();
 	//    GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource3);
@@ -176,10 +182,7 @@ int main(void) {
 		service_irqs();
 		//}
 		if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 1) {
-			max3421_wreg(rEP3INFIFO,2);			// send the "keys up" code
-			max3421_wreg(rEP3INFIFO,0);
-			max3421_wreg(rEP3INFIFO,20);
-			max3421_wreg_as(rEP3INBC,3);				// arm it
+			inhibit_send = 0x00;
 			GREEN_ON;
 		}
 		asm("nop");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project default="postbuild" name="test">
-	<property name="project.name" value="stm32-max3420"/>
+	<property name="project.name" value="Telisel"/>
 	<property name="project.debug" value="Debug"/>
 	<property name="project.obj" value="Debug/obj"/>
 	<property name="project.bin" value="Debug/bin"/>
@@ -24,7 +24,7 @@
 	</target>
   
   <taskdef resource="cpptasks.tasks"/>
-	<target name="compile">
+  <target name="compile">
 		<mkdir dir="${project.bin}"/>
 		<mkdir dir="${project.obj}"/>
 		<cc debug="true" objdir="${project.obj}" outfile="${project.bin}/${project.name}.elf" outtype="executable" subsystem="console">
@@ -47,6 +47,8 @@
       <includepath path="stm_lib/inc"/>
       <includepath path="stm_lib"/>
       <includepath path="."/>
+      <includepath path="COX"/>
+      <includepath path="COX/COX_Peripheral"/>
 							
 			<!-- arm-none-eabi-gcc compiler arguments -->
 			<compilerarg value="-mcpu=cortex-m3"/>

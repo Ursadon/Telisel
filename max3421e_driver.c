@@ -1,5 +1,6 @@
 #include "max3421e_driver.h"
-#include "stm32f10x_spi.h"
+#include <stm_spi_master.h>
+#include "cox_spi.h"
 #include "stm32f10x_gpio.h"
 
 void delay_uss(unsigned long us) {
@@ -15,16 +16,8 @@ void max3421_wreg(unsigned char reg, unsigned char data) {
 	unsigned char garbage;
 	SS_ASSERT;
 
-	/* Send SPI1 data */
-	SPI_I2S_SendData(SPI1, reg | 2);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	garbage = SPI_I2S_ReceiveData(SPI1);
-
-	SPI_I2S_SendData(SPI1, data);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	garbage = SPI_I2S_ReceiveData(SPI1);
+	garbage = pi_spi1.ReadWrite(reg | 2);
+	garbage = pi_spi1.ReadWrite(data);
 
 	SS_DEASSERT;
 }
@@ -34,42 +27,30 @@ void max3421_wreg_as(unsigned char reg, unsigned char data) {
 	unsigned char garbage;
 	SS_ASSERT;
 
-	/* Send SPI1 data */
-	SPI_I2S_SendData(SPI1, reg | 3);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	garbage = SPI_I2S_ReceiveData(SPI1);
-
-	SPI_I2S_SendData(SPI1, data);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	garbage = SPI_I2S_ReceiveData(SPI1);
+	garbage = pi_spi1.ReadWrite(reg | 3);
+	garbage = pi_spi1.ReadWrite(data);
 
 	SS_DEASSERT;
 }
 
 unsigned char max3421_rreg(unsigned char reg) {
+	unsigned char garbage;
 	SS_ASSERT;
 
-	/* Send SPI1 data */
-	SPI_I2S_SendData(SPI1, reg);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
+	garbage = pi_spi1.ReadWrite(reg);
 
 	SS_DEASSERT;
-	return (SPI_I2S_ReceiveData(SPI1));
+	return garbage;
 }
 
 unsigned char max3421_rreg_as(unsigned char reg) {
+	unsigned char garbage;
 	SS_ASSERT;
 
-	/* Send SPI1 data */
-	SPI_I2S_SendData(SPI1, reg + 1);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
+	garbage = pi_spi1.ReadWrite(reg | 1);
 
 	SS_DEASSERT;
-	return (SPI_I2S_ReceiveData(SPI1));
+	return garbage;
 }
 
 extern unsigned char SUD[8];
@@ -79,18 +60,8 @@ void max3421_rblock(unsigned char reg, unsigned char len, unsigned char *buffer)
 	unsigned char garbage, counter = 0;
 	SS_ASSERT;
 
-	/* Send SPI1 data */
-	SPI_I2S_SendData(SPI1, reg);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	garbage = SPI_I2S_ReceiveData(SPI1);
-
-	for (counter = 0; counter < len; counter++) {
-		SPI_I2S_SendData(SPI1, 0xFF); // write a dummy value
-		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-		*buffer++ = SPI_I2S_ReceiveData(SPI1);
-	}
+	garbage = pi_spi1.ReadWrite(reg);
+	pi_spi1.Read(buffer,len);
 	SS_DEASSERT;
 }
 
@@ -99,18 +70,8 @@ void max3421_wblock(unsigned char reg, unsigned char len, unsigned char *buffer)
 	unsigned int garbage, count = 0;
 	SS_ASSERT;
 
-	/* Send SPI1 data */
-	SPI_I2S_SendData(SPI1, reg + 2);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-	garbage = SPI_I2S_ReceiveData(SPI1);
-
-	for (count = 0; count < len; count++) {
-		SPI_I2S_SendData(SPI1, buffer[count]);
-		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET);
-		while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET);
-		garbage = SPI_I2S_ReceiveData(SPI1);
-	}
+	garbage = pi_spi1.ReadWrite(reg);
+	pi_spi1.Write(buffer,len);
 	SS_DEASSERT;
 }
 

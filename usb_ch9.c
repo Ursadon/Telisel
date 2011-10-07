@@ -141,7 +141,7 @@ static unsigned char epirq, usbirq;
 unsigned char sudavirq, suspirq, uresdnirq, uresirq, unknownirq;
 unsigned char REGISTER[27];
 unsigned char send3zeros;
-unsigned char inhibit_send;
+unsigned char inhibit_send = 0;
 unsigned char msgidx = 0;
 unsigned char msglen = sizeof(Message);
 
@@ -325,23 +325,27 @@ void check_for_resume(void) {
 }
 
 void do_IN3(void) {
-//	if (inhibit_send == 0x01) {
-//		max3421_wreg(rEP3INFIFO, 0); // send the "keys up" code
-//		max3421_wreg(rEP3INFIFO, 0);
-//		max3421_wreg(rEP3INFIFO, 0);
-//	} else if (send3zeros == 0x01) { // precede every keycode with the "no keys" code
-//		max3421_wreg(rEP3INFIFO, 0); // send the "keys up" code
-//		max3421_wreg(rEP3INFIFO, 0);
-//		max3421_wreg(rEP3INFIFO, 0);
-//		send3zeros = 0; // next time through this function send the keycode
-//	} else {
-//		send3zeros=1;
-//		max3421_wreg(rEP3INFIFO, 0x02); // Byte0: Modifier
-//		max3421_wreg(rEP3INFIFO, 0x00); // Byte1: Reserved
-//		max3421_wreg(rEP3INFIFO, 0x17); // Byte2: Keycode 0
-//		inhibit_send=1;                     // send the string once per pushbutton press
-//	}
-//	max3421_wreg_as(rEP3INBC, 3); // arm it
+	if (inhibit_send == 0x01) {
+		max3421_wreg(rEP3INFIFO, 0); // send the "keys up" code
+		max3421_wreg(rEP3INFIFO, 0);
+		max3421_wreg(rEP3INFIFO, 0);
+	} else if (send3zeros == 0x01) { // precede every keycode with the "no keys" code
+		max3421_wreg(rEP3INFIFO, 0); // send the "keys up" code
+		max3421_wreg(rEP3INFIFO, 0);
+		max3421_wreg(rEP3INFIFO, 0);
+		send3zeros = 0; // next time through this function send the keycode
+	} else {
+        send3zeros=1;
+        max3421_wreg(rEP3INFIFO,Message[msgidx++]);	// load the next keystroke (3 bytes)
+        max3421_wreg(rEP3INFIFO,Message[msgidx++]);
+        max3421_wreg(rEP3INFIFO,Message[msgidx++]);
+	if(msgidx >= msglen)                    // check for message wrap
+            {
+            msgidx=0;
+            inhibit_send=1;                     // send the string once per pushbutton press
+            }
+	}
+	max3421_wreg(rEP3INBC, 3); // arm it
 }
 
 void feature(unsigned char sc) {

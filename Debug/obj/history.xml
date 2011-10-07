@@ -1,44 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -O2 -g3 -c -DSTM32F10X_MD_VL -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F100RB -Icmsis -Icmsis_boot -Istm_lib\inc -Istm_lib -I.">
-      <target file="usb_ch9.o" lastModified="132bf7450ee">
-         <source file="..\..\usb_ch9.c" lastModified="132bf742713"/>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -O2 -g3 -c -DSTM32F10X_MD_VL -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F100RB -Icmsis -Icmsis_boot -Istm_lib\inc -Istm_lib -I. -ICOX -ICOX\COX_Peripheral">
+      <target file="usb_ch9.o" lastModified="132de8a305b">
+         <source file="..\..\usb_ch9.c" lastModified="132de89aafa"/>
       </target>
-      <target file="startup_stm32f10x_md_vl.o" lastModified="132880bc8ca">
+      <target file="startup_stm32f10x_md_vl.o" lastModified="132de8a0299">
          <source file="..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="1323d8e2d93"/>
       </target>
-      <target file="syscalls.o" lastModified="132880bd3e5">
+      <target file="syscalls.o" lastModified="132de8a27b5">
          <source file="..\..\syscalls\syscalls.c" lastModified="1323d8df56c"/>
       </target>
-      <target file="stm32f10x_exti.o" lastModified="132880bd2fb">
+      <target file="stm32f10x_exti.o" lastModified="132de8a24a3">
          <source file="..\..\stm_lib\src\stm32f10x_exti.c" lastModified="132452632a4"/>
       </target>
-      <target file="core_cm3.o" lastModified="132880bc9b4">
+      <target file="core_cm3.o" lastModified="132de8a0546">
          <source file="..\..\cmsis\core_cm3.c" lastModified="1323d8e2e5e"/>
       </target>
-      <target file="system_stm32f10x.o" lastModified="132880bcb0c">
+      <target file="system_stm32f10x.o" lastModified="132de8a0939">
          <source file="..\..\cmsis_boot\system_stm32f10x.c" lastModified="1323d8e2dd1"/>
       </target>
-      <target file="stm32f10x_spi.o" lastModified="132880bdccf">
-         <source file="..\..\stm_lib\src\stm32f10x_spi.c" lastModified="1323fbd4562"/>
+      <target file="stm_spi_master.o" lastModified="132de8a1af0">
+         <source file="..\..\COX\COX_Peripheral\stm_spi_master.c" lastModified="132d4e07a55"/>
       </target>
-      <target file="stm32f10x_flash.o" lastModified="13294bbb9a0">
+      <target file="stm32f10x_flash.o" lastModified="132de8a2c11">
          <source file="..\..\stm_lib\src\stm32f10x_flash.c" lastModified="13294bb9f81"/>
       </target>
-      <target file="main.o" lastModified="132ab8f1729">
-         <source file="..\..\main.c" lastModified="132ab8ef43e"/>
+      <target file="main.o" lastModified="132de8a13a5">
+         <source file="..\..\main.c" lastModified="132de86b8bc"/>
       </target>
-      <target file="stm32f10x_gpio.o" lastModified="132880bcd6d">
+      <target file="stm32f10x_gpio.o" lastModified="132de8a0f55">
          <source file="..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1323d8e2f96"/>
       </target>
-      <target file="stm32f10x_rcc.o" lastModified="132880bd1a3">
+      <target file="stm32f10x_rcc.o" lastModified="132de8a214a">
          <source file="..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1323d8e2f19"/>
       </target>
-      <target file="misc.o" lastModified="132880bda4e">
+      <target file="misc.o" lastModified="132de8a388a">
          <source file="..\..\stm_lib\src\misc.c" lastModified="1324c05c6ba"/>
       </target>
-      <target file="max3421e_driver.o" lastModified="132959b57b8">
-         <source file="..\..\max3421e_driver.c" lastModified="132959b4cbc"/>
+      <target file="max3421e_driver.o" lastModified="132de8a3498">
+         <source file="..\..\max3421e_driver.c" lastModified="132d4bd0b25"/>
       </target>
    </processor>
 </history>
